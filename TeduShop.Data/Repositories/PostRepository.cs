@@ -5,7 +5,7 @@ using TeduShop.Model.Models;
 
 namespace TeduShop.Data.Repositories
 {
-    public interface IPostRepository
+    public interface IPostRepository : IRepository<Post>
     {
         IEnumerable<Post> GetByAlias(string alias);
     }
