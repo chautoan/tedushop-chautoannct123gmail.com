@@ -15,9 +15,9 @@
             get { return dbContext ?? (dbContext = dbFactory.Init()); }
         }
 
-        public void Comit()
+        public void Commit()
         {
-            dbContext.SaveChanges();
+            DbContext.SaveChanges();
         }
     }
 }

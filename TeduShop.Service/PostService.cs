@@ -71,7 +71,7 @@ namespace TeduShop.Service
 
         public void SaveChanges()
         {
-            _unitOfWork.Comit();
+            _unitOfWork.Commit();
         }
 
         public void Update(Post post)
