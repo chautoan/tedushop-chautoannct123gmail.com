@@ -29,7 +29,7 @@ namespace TeduShop.UnitTest.RepositoryTest
         public void PostCategory_Repository_GetAll()
         {
             var list = objRepository.GetAll().ToList();
-            Assert.AreEqual(1, list.Count);
+            Assert.AreEqual(3, list.Count);
         }
 
         [TestMethod]
@@ -44,7 +44,7 @@ namespace TeduShop.UnitTest.RepositoryTest
             unitOfWork.Commit();
 
             Assert.IsNotNull(result);
-            Assert.AreEqual(1, result.ID);
+            Assert.AreEqual(3, result.ID);
 
         }
     }
